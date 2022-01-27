@@ -1,0 +1,145 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body
+{
+     background-color: #eff3ff;
+}
+
+.carta
+{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+}
+
+.cartaInterna
+{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;   
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartaInterna.is_Flipped
+{
+    transform: rotateY(180deg);
+}
+
+.facciaCarta
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0,0, 0,0.2);
+}
+
+.facciaCarta--frontal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facciaCarta--behind
+{
+    transform: rotateY(180deg);
+}
+
+.contenuto
+{
+    width: 100%;
+    height: 100%; 
+}
+
+.textPkmn
+{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    font-size: 36px;
+    z-index: 10;
+}
+
+.logo
+{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.text
+{
+    text-align: center;
+    font-weight: 800;
+    z-index: 10;
+}
+
+.prevPkmn
+{
+    background-color: #2596be;
+    left: 45%;
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    z-index: 10;
+}
+
+.nextPkmn
+{
+    background-color: #2596be;
+    right: 45%;  
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    z-index: 10;
+}
+
+.moveset
+{
+    text-align: center;
+    font-weight: 600; 
+    z-index: 10;
+}
+
+.showTypes
+{
+    width: 75px;
+    border-radius: 8px;
+    font-weight: 600; 
+    z-index: 10;
+}
+
+.stats
+{
+    text-align: center;
+    font-weight: 600; 
+}
+
+.statsName
+{
+    text-align: center;
+    font-weight: 600; 
+}
+
+.description
+{
+    text-align: center;
+    font-weight: 600; 
+}
+
+
+

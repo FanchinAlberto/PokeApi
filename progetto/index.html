@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta charset="UTF-8">
+      <title>PokeMasters</title>
+   </head>
+   <body>
+      <script src="code.js"></script>
+      <div class="carta">
+         <div class="cartaInterna">
+             <div class="facciaCarta facciaCarta--frontal">
+                 <div class="contenuto" align="center">
+                  <div class="textPkmn" align="center">
+                     Pokemon!
+                  </div>
+                  <div id="img" class="img" align="center"></div>
+                  <div class="text" id="text" align="center"></div>
+                  <div id="showTypes0" class="showTypes" align="center"></div>
+                  <div id="showTypes1" class="showTypes" align="center"></div>
+                  <br>
+                  <div class="moveset" style="color: white;" id="moveset">Moves</div>
+                  <div id="moveset0" class="moveset" ></div>
+                  <div id="moveset1" class="moveset" ></div>
+                  <div id="moveset2" class="moveset" ></div>
+                  <div id="moveset3" class="moveset" ></div>
+                  <br>
+                  <div class="statsName" style="color: white;" id="stats">Stats</div>
+                  <div id="stats0" class="stats"></div>
+                  <div id="stats1" class="stats"></div>
+                  <div id="stats2" class="stats"></div>
+                </div>
+               </div>
+               <div class="facciaCarta facciaCarta--behind">
+                    <div class="logo">
+                        <img src="immagineBack.png" width="400px" height="600px">
+                    </div>
+               </div>
+            </div>
+         </div>
+      <button id="prevPkmn" class="prevPkmn" onclick="switchPkmnBck()"align="center">Previus</button>
+      <button id="nextPkmn" class="nextPkmn" onclick="switchPkmnFwd()" align="center">Next</button>
+      <br><br><br>
+      <div class="description" id="description"></div>
+   </body>
+</html>
